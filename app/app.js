@@ -1,15 +1,26 @@
-angular.module('healthyGulpAngularApp', ['ui.router', 'healthyGulpAngularAppComponents'])
+(function () {
 
-.config(['$stateProvider', '$urlRouterProvider',
-    function($stateProvider, $urlRouterProvider) {
+    var app = angular.module("airnodaApp", ["ngRoute", 'airnodaAppComp']);
 
-        $urlRouterProvider.otherwise('/');
-
-        $stateProvider
-
-            .state('home', {
-                url: '/',
-                templateUrl: 'components/home.html'
+    app.config(function ($routeProvider, $locationProvider) {
+        
+        $locationProvider.html5Mode(true).hashPrefix('!');
+        
+        $routeProvider
+            .when("/about", {
+                templateUrl: "components/about/About.html",
+                controller: "AboutController",
+                controllerAs: "aboutCtrl"
+            })
+            .when("/contact", {
+                templateUrl: "components/contact/ContactMe.html",
+                controller: "ContactController",
+                controllerAs: "contactCtrl"
+            })
+            .otherwise({
+                redirectTo: "/about"
             });
+        
+    });
 
-    }]);
+}());

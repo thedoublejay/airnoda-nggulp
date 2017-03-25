@@ -124,7 +124,7 @@ pipes.scriptedPartialsDev = function() {
         .pipe(plugins.htmlhint.failReporter())
         .pipe(plugins.htmlmin({collapseWhitespace: true, removeComments: true}))
         .pipe(plugins.ngHtml2js({
-            moduleName: "healthyGulpAngularAppComponents"
+            moduleName: "airnodaAppComp"
         }))
         .pipe(gulp.dest(paths.distDev + "/templates"));
 };
@@ -134,7 +134,7 @@ pipes.scriptedPartialsProd = function() {
         .pipe(plugins.htmlhint.failReporter())
         .pipe(plugins.htmlmin({collapseWhitespace: true, removeComments: true}))
         .pipe(plugins.ngHtml2js({
-            moduleName: "healthyGulpAngularAppComponents"
+            moduleName: "airnodaAppComp"
         }))
         .pipe(plugins.concat('templates.min.js'))
         .pipe(plugins.uglify())

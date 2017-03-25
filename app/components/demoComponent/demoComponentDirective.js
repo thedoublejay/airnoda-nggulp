@@ -1,7 +1,7 @@
 try {
-  module = angular.module('healthyGulpAngularAppComponents');
+  module = angular.module('airnodaAppComp');
 } catch (e) {
-  module = angular.module('healthyGulpAngularAppComponents', []);
+  module = angular.module('airnodaAppComp', []);
 }
 
 module.directive('demoComponent', [function() {
