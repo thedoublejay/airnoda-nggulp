@@ -1,6 +1,6 @@
 (function () {
 
-    var app = angular.module("airnodaApp", ["ngRoute", 'airnodaAppComp']);
+    var app = angular.module("airnodaApp", ["ngRoute"]);
 
     app.config(function ($routeProvider, $locationProvider) {
         
