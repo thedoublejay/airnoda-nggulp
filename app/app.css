@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300i,500,700');
+
+body { font-family: 'Fira Sans', sans-serif; font-size: 16px; font-weight: 500; color: #555; margin: 0; padding: 0; }
+
+/* Text */
+
+h1 { margin: 0 0 1em 0; font-size: 2.8em; font-weight: 700; }
+h2 { margin: 0 0 .5em 0; font-size: 1.6em; font-weight: 500; line-height: 1.1em; }
+h3 { margin: 0 0 .5em 0; font-size: 1.3em; font-weight: 500; }
+h4 { margin: 0 0 1.5em 0; font-size: 1em; font-weight: 500; }
+
