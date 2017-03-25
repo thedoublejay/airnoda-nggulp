@@ -4,7 +4,7 @@
 
     var ContactController = function ($scope) {
 
-        let ContactCtrl = this;
+        var ContactCtrl = this;
 
         ContactCtrl.number = 12345678;
 
