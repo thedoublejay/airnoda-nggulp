@@ -171,7 +171,7 @@ pipes.builtVendorStylesDev = function() {
 pipes.builtVendorStylesProd = function() {
     return es.merge( pipes.buildVendorStylesLess(), pipes.builtVendorCssStyles() )
         .pipe(plugins.concat('vendor.min.css'))
-        .pipe(plugins.minifyCss())
+        .pipe(plugins.cleanCss())
         .pipe(gulp.dest(paths.distProd + "/styles"));
 }
 
@@ -179,7 +179,7 @@ pipes.builtStylesProd = function() {
     return gulp.src(paths.styles)
         .pipe(plugins.sourcemaps.init())
             .pipe(plugins.sass())
-            .pipe(plugins.minifyCss())
+            .pipe(plugins.cleanCss())
         .pipe(plugins.sourcemaps.write())
         .pipe(pipes.minifiedFileName())
         .pipe(gulp.dest(paths.distProd));

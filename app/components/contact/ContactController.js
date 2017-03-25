@@ -9,7 +9,8 @@
         ContactCtrl.number = 12345678;
 
     };
-
+    
+    ContactController.$inject = [ '$scope' ];
     app.controller("ContactController", ContactController);
 
 }());
