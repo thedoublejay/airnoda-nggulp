@@ -84,6 +84,8 @@ i.fa.icon-label {
     font-size: 12px;
     min-height: 320px;
     padding-top: 50px; }
+  .navbar-default {
+    padding: 0px; }
   button.nav-btn.arnd-logo-button.btn {
     float: right;
     font-size: 18px;
