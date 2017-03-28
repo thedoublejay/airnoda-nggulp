@@ -21,8 +21,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bower:css -->
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
     <!-- endinject -->
     <!-- inject:css -->
+    <link rel="stylesheet" href="app.css">
     <!-- endinject -->
 </head>
 
@@ -33,10 +36,25 @@
     <header ng-include="'components/header/header.html'"></header>
     <div ng-view></div>
     <!-- bower:js -->
+    <script src="bower_components/jquery.js"></script>
+    <script src="bower_components/angular.js"></script>
+    <script src="bower_components/angular-animate.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="bower_components/angularfire.js"></script>
+    <script src="bower_components/bootstrap.js"></script>
+    <script src="bower_components/firebase.js"></script>
     <!-- endinject -->
     <!-- templates:js -->
+    <script src="templates/404.js"></script>
+    <script src="templates/components/about/About.js"></script>
+    <script src="templates/components/header/header.js"></script>
+    <script src="templates/components/contact/ContactMe.js"></script>
     <!-- endinject -->
     <!-- inject:js -->
+    <script src="app.js"></script>
+    <script src="components/contact/ContactController.js"></script>
+    <script src="components/header/HeaderController.js"></script>
+    <script src="components/about/AboutController.js"></script>
     <!-- endinject -->
 </body>
 
