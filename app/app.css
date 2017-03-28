@@ -1,11 +1,92 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Sans:300i,500,700');
-
-body { font-family: 'Fira Sans', sans-serif; font-size: 16px; font-weight: 500; color: #555; margin: 0; padding: 0; }
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300i,500,700");
+body {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  min-height: 1200px;
+  padding-top: 75px;
+}
 
 /* Text */
+h1 {
+  margin: 0 0 1em 0;
+  font-size: 2.8em;
+  font-weight: 700; }
 
-h1 { margin: 0 0 1em 0; font-size: 2.8em; font-weight: 700; }
-h2 { margin: 0 0 .5em 0; font-size: 1.6em; font-weight: 500; line-height: 1.1em; }
-h3 { margin: 0 0 .5em 0; font-size: 1.3em; font-weight: 500; }
-h4 { margin: 0 0 1.5em 0; font-size: 1em; font-weight: 500; }
+h2 {
+  margin: 0 0 .5em 0;
+  font-size: 2.2em;
+  font-weight: 500;
+  line-height: 1.1em; }
 
+h3 {
+  margin: 0 0 .5em 0;
+  font-size: 1.6em;
+  font-weight: 500; }
+
+h4 {
+  margin: 0 0 1.5em 0;
+  font-size: 1em;
+  font-weight: 500; }
+
+i.fa.icon-label {
+  padding-right: 8px; }
+
+/* Header */
+.navbar-default {
+  background-color: white;
+  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+  z-index: 20;
+  padding: 0px 25px; }
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+  .navbar-default {
+    padding: 0px 10px; } }
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+  .navbar-default {
+    padding: 0px 5px; } }
+
+.arnd-logo-button {
+  background-color: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: 0;
+  width: auto;
+  height: 48px; }
+
+.arnd-logo-lockup-icon {
+  display: inline-block;
+  width: 35px;
+  height: 35px; }
+
+.arnd-logo-button {
+  line-height: 48px; }
+
+.arnd-logo-button:focus {
+  outline: 0 !important; }
+
+.arnd-logo-blk {
+  align-items: center; }
+
+.arnd-logo-text {
+  display: inline-block;
+  margin: 0;
+  position: relative;
+  top: 7px;
+  padding-left: 4px; }
+
+/* Body */
+.container-fluid {
+    padding: 0 25px;
+}
+
+.fa.fa-wrench {
+    font-size: 20em;
+}
