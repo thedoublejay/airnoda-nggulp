@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="airnodaApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="airnodaApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="airnodaApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="airnodaApp" class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <base href="/" />
+    <title>Airnoda</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="ico/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="ico/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="ico/manifest.json">
+    <link rel="mask-icon" href="ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- bower:css -->
+    <link rel="stylesheet" href="styles/font-awesome.css">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <!-- endinject -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app.css">
+    <!-- endinject -->
+</head>
+
+<body ng-cloak>
+    <!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+    <header ng-include="'components/header/header.html'"></header>
+    <div ng-view></div>
+    <!-- bower:js -->
+    <script src="bower_components/jquery.js"></script>
+    <script src="bower_components/angular.js"></script>
+    <script src="bower_components/angular-animate.js"></script>
+    <script src="bower_components/angular-route.js"></script>
+    <script src="bower_components/angularfire.js"></script>
+    <script src="bower_components/bootstrap.js"></script>
+    <script src="bower_components/firebase.js"></script>
+    <!-- endinject -->
+    <!-- templates:js -->
+    <script src="templates/components/header/header.js"></script>
+    <script src="templates/components/about/About.js"></script>
+    <script src="templates/components/contact/ContactMe.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="app.js"></script>
+    <script src="components/contact/ContactController.js"></script>
+    <script src="components/about/AboutController.js"></script>
+    <script src="components/header/HeaderController.js"></script>
+    <!-- endinject -->
+</body>
+
+</html>
