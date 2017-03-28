@@ -6,8 +6,10 @@
     var HeaderController = function ($scope, $location) {
         var HeaderCtrl = this;
         
+        HeaderCtrl.currentPage = 'about'; 
         HeaderCtrl.changePage = function(moveTo){
             $location.path("/"+ moveTo +"/");
+            HeaderCtrl.currentPage = moveTo;
         };
     };
     
