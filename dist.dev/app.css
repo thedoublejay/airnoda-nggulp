@@ -135,22 +135,19 @@ i.fa.icon-label {
 .arnd-prof-name {
   display: inline-block;
   margin-top: 15px;
-  color: #333A56;
-}
+  color: #333A56; }
 
 .arnd-prof-subname {
   font-style: italic;
-  font-size: 1.2em; 
-  color: #52658F;
-}
+  font-size: 1.2em;
+  color: #52658F; }
 
 .arnd-profile {
   width: 200px;
   display: inline-block; }
 
 .arnd-content-title {
-    color: #52658F;
-}
+  color: #52658F; }
 
 /* Portrait phones and smaller */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -158,10 +155,6 @@ i.fa.icon-label {
     width: 150px; }
   .section {
     min-height: 330px;
-    padding: 30px 0px;
-    }
+    padding: 30px 0px; }
   .arnd-content-title {
-    text-align: center;
-  }
-}
-
+    text-align: center; } }
