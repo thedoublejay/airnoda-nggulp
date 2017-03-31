@@ -78,7 +78,7 @@ pipes.builtAppScriptsProd = function() {
         .pipe(pipes.orderedAppScripts())
         .pipe(plugins.sourcemaps.init())
             .pipe(plugins.concat('app.min.js'))
-            .pipe(plugins.uglify())
+            .pipe(plugins.uglify({mangle:false}))
         .pipe(plugins.sourcemaps.write())
         .pipe(gulp.dest(paths.distScriptsProd));
 };
@@ -98,7 +98,7 @@ pipes.builtVendorScriptsProd = function() {
         )
         .pipe(pipes.orderedVendorScripts())
         .pipe(plugins.concat('vendor.min.js'))
-        .pipe(plugins.uglify())
+        .pipe(plugins.uglify({mangle:false}))
         .pipe(gulp.dest(paths.distScriptsProd));
 };
 
@@ -137,7 +137,7 @@ pipes.scriptedPartialsProd = function() {
             moduleName: "airnodaAppComp"
         }))
         .pipe(plugins.concat('templates.min.js'))
-        .pipe(plugins.uglify())
+        .pipe(plugins.uglify({mangle:false}))
         .pipe(gulp.dest(paths.distScriptsProd));
 };
 

@@ -1,122 +1,396 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300i,500,700");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,500,700");
 body {
-  font-family: 'Fira Sans', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  color: #555;
-  margin: 0;
-  padding: 0;
-  background-color: #E8E8E8;
-  min-height: 1200px;
-  padding-top: 75px; }
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #555;
+    margin: 0;
+    padding: 0;
+    background-color: #E8E8E8;
+    min-height: 1200px;
+    padding-top: 75px;
+}
+
+.container {
+    padding: 0px 100px;
+}
 
 .btn:hover {
-  color: #52658F;
-  text-decoration: none; }
+    color: #52658F;
+    text-decoration: none;
+}
+
 
 /* Text */
+
 h1 {
-  margin: 0 0 1em 0;
-  font-size: 2.8em;
-  font-weight: 700; }
+    margin: 0 0 1em 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
 
 h2 {
-  margin: 0 0 .5em 0;
-  font-size: 2.2em;
-  font-weight: 500;
-  line-height: 1.1em; }
+    margin: 0 0 .5em 0;
+    font-size: 2.2em;
+    font-weight: 500;
+    line-height: 1.1em;
+}
 
 h3 {
-  margin: 0 0 .5em 0;
-  font-size: 1.6em;
-  font-weight: 500; }
+    margin: 0 0 .5em 0;
+    font-size: 1.6em;
+    font-weight: 400;
+}
 
 h4 {
-  margin: 0 0 1.5em 0;
-  font-size: 1em;
-  font-weight: 500; }
+    margin: 0 0 1.5em 0;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+h5 {
+    margin: 0 0 1.5em 0;
+    font-size: 0.6em;
+    font-weight: 300;
+}
 
 i.fa.icon-label {
-  padding-right: 8px; }
+    padding-right: 8px;
+}
+
 
 /* Header */
+
 .navbar-default {
-  background-color: #f4f7f6;
-  box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
-  z-index: 20;
-  padding: 0px 25px; }
+    background-color: #f4f7f6;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    z-index: 20;
+    padding: 0px 25px;
+}
 
 .arnd-logo-button {
-  background-color: transparent !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  min-width: 0;
-  width: auto;
-  height: 48px; }
+    background-color: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    min-width: 0;
+    width: auto;
+    height: 48px;
+}
 
 .arnd-logo-lockup-icon {
-  display: inline-block;
-  width: 35px;
-  height: 35px; }
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
 
 .arnd-logo-button {
-  line-height: 48px; }
+    line-height: 48px;
+}
 
 .arnd-logo-button:focus {
-  outline: 0 !important; }
+    outline: 0 !important;
+}
 
 .arnd-logo-blk {
-  align-items: center; }
+    align-items: center;
+}
 
 .arnd-logo-text {
-  display: inline-block;
-  margin: 0;
-  position: relative;
-  top: 7px;
-  padding-left: 4px; }
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    top: 7px;
+    padding-left: 4px;
+}
 
-.navbar-default .navbar-nav > li > a:hover {
-  color: #52658F; }
+.navbar-default .navbar-nav>li>a:hover {
+    color: #52658F;
+}
+
 
 /* Portrait phones and smaller */
+
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  body {
-    font-size: 12px;
-    min-height: 320px;
-    padding-top: 50px; }
-  .navbar-default {
-    padding: 0px; }
-  button.nav-btn.arnd-logo-button.btn {
-    float: right;
-    font-size: 18px;
-    width: 40px;
-    outline: 0;
-    background-color: none;
-    box-shadow: none;
-    border: none; }
-  .arnd-logo-lockup-icon {
-    width: 25px;
-    height: 25px; }
-  .arnd-logo-text {
-    top: 4px;
-    font-size: 1.6em; }
-  .arnd-top-left {
-    padding: 0px 10px; } }
+    body {
+        font-size: 12px;
+        min-height: 320px;
+        padding-top: 50px;
+    }
+    .navbar-default {
+        padding: 0px;
+    }
+    button.nav-btn.arnd-logo-button.btn {
+        float: right;
+        font-size: 18px;
+        width: 40px;
+        outline: 0;
+        background-color: none;
+        box-shadow: none;
+        border: none;
+    }
+    .arnd-logo-lockup-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .arnd-logo-text {
+        top: 4px;
+        font-size: 1.6em;
+    }
+    .arnd-top-left {
+        padding: 0px 10px;
+    }
+}
+
 
 /* Landscape phones and portrait tablets */
+
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  .navbar-default {
-    padding: 0px 10px; }
-  .arnd-logo-lockup-icon {
-    width: 25px;
-    height: 25px; }
-  .arnd-logo-text {
-    top: 5px;
-    font-size: 1.7em; } }
+    .navbar-default {
+        padding: 0px 10px;
+    }
+    .arnd-logo-lockup-icon {
+        width: 25px;
+        height: 25px;
+    }
+    .arnd-logo-text {
+        top: 5px;
+        font-size: 1.7em;
+    }
+}
+
 
 /* Body */
+
 .container-fluid {
-  padding: 0 25px; }
+    padding: 0 25px;
+}
 
 .fa.fa-wrench {
-  font-size: 20em; }
+    font-size: 20em;
+}
+
+
+/* Section */
+
+.section {
+    min-height: 400px;
+    padding: 80px 0px;
+}
+
+.sec-odd {
+    background-color: #f4f7f6;
+    padding-bottom: 200px;
+}
+
+.arnd-row-text {
+    text-align: center;
+}
+
+.arnd-prof-name {
+    display: inline-block;
+    margin-top: 15px;
+    color: #333A56;
+}
+
+.arnd-prof-subname {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #52658F;
+}
+
+.arnd-profile {
+    width: 200px;
+    display: inline-block;
+}
+
+.arnd-content-title {
+    color: #52658F;
+}
+
+.arnd-sect-icon {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 9em;
+    padding-right: 30px;
+}
+
+.arnd-sect-content {
+    display: inline-block;
+}
+
+.arnd-sect-title {
+    padding-bottom: 20px;
+}
+
+.arnd-sect-title-val {
+    font-size: 2.4em;
+    font-weight: 600;
+    color: #52658F;
+}
+
+a.arnd-sect-hltd {
+    color: #52658F;
+    text-decoration: none;
+}
+
+.arnd-sect-content-right {
+    float: right;
+    padding-top: 50px;
+}
+
+.arnd-comp-title {
+    margin-bottom: .5em;
+}
+
+.arnd-comp-loc {
+    margin-bottom: 45px;
+}
+
+.arnd-sect-icon-right {
+    padding: 0 0 0 30px;
+    font-size: 9em;
+}
+
+.arnd-sect-box {
+    width: 500px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    margin-bottom: 15px;
+    background-color: white;
+}
+
+.arnd-sect-title-rate {
+    display: block;
+}
+
+.arnd-skills-cont {
+    display: inline-block;
+    height: 140px;
+    width: 250px;
+    margin: 0 12px 12px 0px;
+}
+
+.arnd-skills-box {
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    height: 100%;
+    width: 100%;
+    margin-right: 10px;
+    background-color: white;
+}
+
+.arnd-rate-stars {
+    color: #52658F;
+}
+
+.no-padd {
+    padding: 0;
+}
+
+.no-marg {
+    margin: 0;
+}
+
+
+/* Portrait phones and smaller */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .container {
+        padding: 0px 60px;
+    }
+    .arnd-profile {
+        width: 150px;
+    }
+    .section {
+        min-height: 330px;
+        padding: 30px 0px;
+    }
+    .arnd-content-title {
+        text-align: center;
+    }
+    .arnd-sect-icon {
+        font-size: 6em;
+        display: block;
+        text-align: center;
+        padding-right: 0px;
+    }
+    .arnd-sect-content {
+        display: block;
+        text-align: left;
+    }
+    .arnd-sect-title {
+        text-align: center;
+    }
+    .arnd-sect-content-right {
+        float: none;
+    }
+    .arnd-sect-box {
+        width: 100%;
+        padding: 35px;
+    }
+    .arnd-company {
+        font-size: 1.3em;
+    }
+    .arnd-sect-title-val {
+        font-size: 1.9em;
+    }
+    .arnd-comp-loc {
+        margin-bottom: 25px;
+    }
+    .arnd-skills-cont {
+        display: inline-block;
+        max-height: 100%;
+        width: 45%;
+        margin: 0px 11px 10px 0px;
+        vertical-align: top;
+    }
+    .arnd-skills-box {
+        padding: 20px;
+    }
+    .arnd-skills-name {
+        font-size: 1.2em;
+    }
+    .arnd-rate-stars {
+        font-size: 1.0em;
+    }
+    .arnd-right-box {
+        margin-right: 0px;
+    }
+}
+
+
+/* Footer */
+
+.arnd-footer {
+    background-color: #353439;
+    height: 115px;
+    padding: 20px 15px;
+}
+
+.arnd-footer-icon {
+    font-size: 2.5em;
+    padding-right: 25px;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: gray;
+}
+
+.arnd-footer-icon:hover {
+    color: #52658F;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .arnd-footer-icon {
+        font-size: 1.6em;
+        padding-right: 25px;
+        text-decoration: none !important;
+        cursor: pointer;
+        color: gray;
+    }
+}
+
+/* Contact Section */
+.arnd-contact-section {
+    min-height: 1200px;
+}
