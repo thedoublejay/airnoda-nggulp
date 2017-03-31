@@ -3,12 +3,12 @@
         <div class="container">
             <div class="row arnd-row-text">
                 <div class="arnd-profile">
-                    <img class="img-responsive" alt="profile" ng-src="ico/profile.png">
+                    <img class="img-responsive" src="ico/profile.png">
                 </div>
             </div>
             <div class="row arnd-row-text">
                 <div class="arnd-prof-name" style="border-bottom: 1px solid;">
-                    <h2 class="text-center" style="margin-bottom: 15px;">Jose Jaime K. Adonis</h2>
+                    <h2 class="text-center" style="margin-bottom: 15px;">Jose Jaime Adonis</h2>
                 </div>
             </div>
             <div class="row arnd-row-text">
@@ -21,12 +21,51 @@
     <div class="section sec-odd">
         <div class="container">
             <div class="row">
-                <div class="arnd-content-title col-md-4">
-                    <h3>Introduction</h3>
+                <div class="arnd-sect-icon">
+                    <i class="fa fa-user icon-label" aria-hidden="true"></i>
                 </div>
-                <div class="arnd-content col-md-8">
-                    <p>Baby, you my everything, you all I ever wanted We could do it real big, bigger than you ever done it You be up on everything, other hoes ain't never on it I want this forever, I swear, I can spend whatever on it 'Cause she hold me down every time I hit her up When I get right, I promise that we gon' live it up.</p>
-                    <p>Know you got a roommate, call me when there's no one there Put the key under the mat and you know I be over there (Yup) I be over there, shawty, I be over there I be hittin' all the spots that you ain't even know was there And you don't even have to ask twice You could have my heart or we could share it like the last slice Always felt like you was so accustomed to the fast life</p>
+                <div class="arnd-sect-content">
+                    <div class="arnd-sect-title">
+                        <h3 class="arnd-sect-title-val">Hello, my friend</h3>
+                    </div>
+                    <div class="arnd-sect-content">
+                        <p>I'm JJ Adonis, a front end-developer born and raised in <a href="https://goo.gl/0xLs2Y" class="arnd-sect-hltd">Manila, Philippines.</a> </p>
+                        <p>
+                            Fluent in JavaScript and currently working on improving my HTML and CSS skills.</p>
+                        <p>I just started learning web development and there still a lot of catching up to do.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row arnd-sect-content-right">
+                <div class="arnd-sect-icon visible-xs">
+                    <i class="fa fa-briefcase icon-label" aria-hidden="true"></i>
+                </div>
+                <div class="arnd-sect-content">
+                    <div class="arnd-sect-title">
+                        <h3 class="arnd-sect-title-val">Here's what I've done so far</h3>
+                    </div>
+                    <div class="arnd-sect-content">
+                        <div ng-repeat="accomp in aboutCtrl.accomList">
+                            <accomp-tile accomp="accomp"></accomp-tile>
+                        </div>
+                    </div>
+                </div>
+                <div class="arnd-sect-icon arnd-sect-icon-right hidden-xs">
+                    <i class="fa fa-briefcase icon-label" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row" style="padding-top: 80px;">
+                <div class="col-md-2 col-xs-12 no-padd">
+                    <div class="arnd-sect-icon"><i class="fa fa-check-square-o icon-label" aria-hidden="true" style="padding-right: 0px;"></i></div>
+                </div>
+                <div class="col-md-10 no-padd">
+                    <div class="arnd-sect-title arnd-sect-title-rate">
+                        <h3 class="arnd-sect-title-val">Ratings</h3>
+                    </div>
+                    <div class="arnd-sect-content">                       
+                        <rating-tile ng-repeat="rating in aboutCtrl.ratings" rating="rating"></rating-tile>                              
+                    </div>
                 </div>
             </div>
         </div>
