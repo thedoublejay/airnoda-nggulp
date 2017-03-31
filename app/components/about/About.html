@@ -3,7 +3,8 @@
         <div class="container">
             <div class="row arnd-row-text">
                 <div class="arnd-profile">
-                    <img class="img-responsive" src="ico/profile.png">
+                    <img class="img-responsive" ng-mouseover="aboutCtrl.profFn = 'profilecw'"
+                        ng-mouseleave="aboutCtrl.profFn = 'profile'" ng-src="ico/{{aboutCtrl.profFn}}.png">
                 </div>
             </div>
             <div class="row arnd-row-text">
@@ -61,7 +62,7 @@
                 </div>
                 <div class="col-md-10 no-padd">
                     <div class="arnd-sect-title arnd-sect-title-rate">
-                        <h3 class="arnd-sect-title-val">Ratings</h3>
+                        <h3 class="arnd-sect-title-val">Technical Skills</h3>
                     </div>
                     <div class="arnd-sect-content">                       
                         <rating-tile ng-repeat="rating in aboutCtrl.ratings" rating="rating"></rating-tile>                              

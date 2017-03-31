@@ -179,6 +179,7 @@ i.fa.icon-label {
 
 .sec-odd {
     background-color: #f4f7f6;
+    padding-bottom: 200px;
 }
 
 .arnd-row-text {
@@ -291,7 +292,6 @@ a.arnd-sect-hltd {
 }
 
 
-
 /* Portrait phones and smaller */
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
@@ -344,7 +344,7 @@ a.arnd-sect-hltd {
         margin: 0px 11px 10px 0px;
         vertical-align: top;
     }
-    .arnd-skills-box{
+    .arnd-skills-box {
         padding: 20px;
     }
     .arnd-skills-name {
@@ -356,4 +356,41 @@ a.arnd-sect-hltd {
     .arnd-right-box {
         margin-right: 0px;
     }
+}
+
+
+/* Footer */
+
+.arnd-footer {
+    background-color: #353439;
+    height: 115px;
+    padding: 20px 15px;
+}
+
+.arnd-footer-icon {
+    font-size: 2.5em;
+    padding-right: 25px;
+    text-decoration: none !important;
+    cursor: pointer;
+    color: gray;
+}
+
+.arnd-footer-icon:hover {
+    color: #52658F;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .arnd-footer-icon {
+        font-size: 1.6em;
+        padding-right: 25px;
+        text-decoration: none !important;
+        cursor: pointer;
+        color: gray;
+    }
+}
+
+/* Contact Section */
+.arnd-contact-section {
+    min-height: 1200px;
 }
