@@ -1,23 +1,14 @@
 [debug] ----------------------------------------------------------------------
-[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Nowitzki\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\Nowitzki\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
 [debug] CLI Version:  3.5.0
 [debug] Platform:     win32
 [debug] Node Version: v7.7.4
-[debug] Time:         Thu Mar 30 2017 01:11:52 GMT+0800 (Malay Peninsula Standard Time)
+[debug] Time:         Fri Mar 31 2017 13:56:09 GMT+0800 (Malay Peninsula Standard Time)
 [debug] ----------------------------------------------------------------------
 [debug] 
-[debug] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
-[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/airnodapage-e6632  
- Thu Mar 30 2017 01:11:52 GMT+0800 (Malay Peninsula Standard Time)
-[debug] <<< HTTP RESPONSE 200
-[debug] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/airnodapage-e6632/tokens  
- Thu Mar 30 2017 01:11:55 GMT+0800 (Malay Peninsula Standard Time)
-[debug] <<< HTTP RESPONSE 200
+[info] Starting Firebase development server...
 [info] 
-[info] === Deploying to 'airnodapage-e6632'...
+[info] Project Directory: C:\Users\Nowitzki\Desktop\airnoda-nggulp
+[info] Public Directory: dist.dev
 [info] 
-[info] i  deploying database, hosting
-[info] +  database: rules ready to deploy.
-[info] i  hosting: preparing dist.prod directory for upload...
-[debug] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/airnodapage-e6632/uploads/-KgQ2MeHY-Tob_QE6bGb?fileCount=24&message=  
- Thu Mar 30 2017 01:12:00 GMT+0800 (Malay Peninsula Standard Time)
+[info] Server listening at: http://localhost:5000
