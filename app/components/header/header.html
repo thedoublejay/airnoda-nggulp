@@ -15,18 +15,18 @@
         </div>
         <div id="navbar" aria-expanded="true" class="arnd-nav-right navbar-collapse collapse">
             <ul class="nav navbar-nav visible-xs">
-                <li ng-class="{'active' : headerCtrl.currentPage == 'about' }">
+                <li ng-class="{'active' : headerCtrl.currentPage == '/about' }">
                     <a href="#" ng-click="headerCtrl.changePage('about')" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-user icon-label" aria-hidden="true"></i>About</a>
                 </li>
-                <li ng-class="{'active' : headerCtrl.currentPage == 'contact' }">
+                <li ng-class="{'active' : headerCtrl.currentPage == '/contact' }">
                     <a href="#" ng-click="headerCtrl.changePage('contact')" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-address-book icon-label" aria-hidden="true"></i>Contact</a>
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right hidden-xs">
-                <li ng-class="{'active' : headerCtrl.currentPage == 'about' }">
+                <li ng-class="{'active' : headerCtrl.currentPage == '/about' }">
                     <a href="#" ng-click="headerCtrl.changePage('about')"><i class="fa fa-user icon-label" aria-hidden="true"></i>About</a>
                 </li>
-                <li ng-class="{'active' : headerCtrl.currentPage == 'contact' }">
+                <li ng-class="{'active' : headerCtrl.currentPage == '/contact' }">
                     <a href="#" ng-click="headerCtrl.changePage('contact')"><i class="fa fa-address-book icon-label" aria-hidden="true"></i>Contact</a>
                 </li>
             </ul>
