@@ -6,7 +6,7 @@ body {
     color: #555;
     margin: 0;
     padding: 0;
-    background-color: #E8E8E8;
+    background-color: #373737;
     min-height: 1200px;
     padding-top: 75px;
 }
@@ -16,7 +16,7 @@ body {
 }
 
 .btn:hover {
-    color: #52658F;
+    color: #C0B283;
     text-decoration: none;
 }
 
@@ -62,7 +62,7 @@ i.fa.icon-label {
 /* Header */
 
 .navbar-default {
-    background-color: #f4f7f6;
+    background-color: #f4f4f4;
     box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.14), 0 3px 3px -2px rgba(0, 0, 0, 0.12), 0 1px 8px 0 rgba(0, 0, 0, 0.2);
     z-index: 20;
     padding: 0px 25px;
@@ -104,7 +104,7 @@ i.fa.icon-label {
 }
 
 .navbar-default .navbar-nav>li>a:hover {
-    color: #52658F;
+    color: #C0B283;
 }
 
 
@@ -178,7 +178,7 @@ i.fa.icon-label {
 }
 
 .sec-odd {
-    background-color: #f4f7f6;
+    background-color: #f4f4f4;
     padding-bottom: 200px;
 }
 
@@ -189,13 +189,13 @@ i.fa.icon-label {
 .arnd-prof-name {
     display: inline-block;
     margin-top: 15px;
-    color: #333A56;
+    color: #C0B283;
 }
 
 .arnd-prof-subname {
     font-style: italic;
     font-size: 1.2em;
-    color: #52658F;
+    color: #DCD0C0;
 }
 
 .arnd-profile {
@@ -224,12 +224,11 @@ i.fa.icon-label {
 
 .arnd-sect-title-val {
     font-size: 2.4em;
-    font-weight: 600;
-    color: #52658F;
+    color: #C0B283;
 }
 
 a.arnd-sect-hltd {
-    color: #52658F;
+    color: #C0B283;
     text-decoration: none;
 }
 
@@ -266,7 +265,7 @@ a.arnd-sect-hltd {
 .arnd-skills-cont {
     display: inline-block;
     height: 140px;
-    width: 250px;
+    width: 208px;
     margin: 0 12px 12px 0px;
 }
 
@@ -280,7 +279,7 @@ a.arnd-sect-hltd {
 }
 
 .arnd-rate-stars {
-    color: #52658F;
+    color: #C0B283;
 }
 
 .no-padd {
@@ -376,9 +375,19 @@ a.arnd-sect-hltd {
 }
 
 .arnd-footer-icon:hover {
-    color: #52658F;
+    color: #C0B283;
 }
 
+/* Contact Section */
+.arnd-contact-section {
+    min-height: 1200px;
+    padding-top: 150px;
+}
+
+.arnd-contact-head {
+    text-align: center;
+    color: #C0B283;
+}
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
     .arnd-footer-icon {
@@ -388,9 +397,7 @@ a.arnd-sect-hltd {
         cursor: pointer;
         color: gray;
     }
-}
-
-/* Contact Section */
-.arnd-contact-section {
-    min-height: 1200px;
+    .arnd-contact-section {
+        min-height: 560px;
+    }
 }
